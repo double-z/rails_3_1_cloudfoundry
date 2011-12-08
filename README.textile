@@ -1,0 +1,13 @@
+Sample Rails3.1 Application Cloud Foundry Deployable
+
+h1. How to deploy to cloud foundry.
+
+<pre>
+git clone git@github.com:hamakn/rails_3_1_cloudfoundry.git
+cd rails_3_1_cloudfoundry
+
+RAILS_ENV=production bundle exec rake assets:precompile
+
+vmc target api.cloudfoundry.com
+vmc push <appname>
+</pre>
