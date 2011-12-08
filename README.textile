@@ -1,4 +1,5 @@
 Sample Rails3.1 Application Cloud Foundry Deployable
+Sample URL: "http://rails-31.cloudfoundry.com/":http://rails-31.cloudfoundry.com/
 
 h1. How to deploy to cloud foundry.
 
@@ -10,4 +11,13 @@ RAILS_ENV=production bundle exec rake assets:precompile
 
 vmc target api.cloudfoundry.com
 vmc push <appname>
+# Would you like to bind any services to '<appname>'? [yN]: y
+# Would you like to use an existing provisioned service [yN]? N
+# The following system services are available:
+# 1. mongodb
+# 2. mysql
+# 3. postgresql
+# 4. rabbitmq
+# 5. redis
+# Please select one you wish to provision: 2
 </pre>
